@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         val queue: RequestQueue = Volley.newRequestQueue(applicationContext)
         //Json objesini oluşturup, OpenAI talep ettiği parametreleri belirtiyoruz.
         val jsonObject: JSONObject? = JSONObject()
-        jsonObject?.put("model", "text-davinci-003")
+        jsonObject?.put("model", "gpt-3.5-turbo-instruct")
         jsonObject?.put("prompt", query)
         jsonObject?.put("temperature", 0)
         jsonObject?.put("max_tokens", 500)
